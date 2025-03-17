@@ -1,7 +1,7 @@
 /* Atur background dengan overlay */
 body {
-    background: url('background.jpg') no-repeat center center fixed;
-    background-size: cover;
+    background: black;
+    }
     position: relative;
     color: white;
     font-family: Arial, sans-serif;
