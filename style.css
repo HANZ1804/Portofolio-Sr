@@ -1,126 +1,32 @@
-/* Atur background dengan overlay */
+/* Warna teks putih */
 body {
-    background: black;
-    }
-    position: relative;
-    color: white;
+    background-color: black;
+    color: white; /* Tetap putih */
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
 }
 
-/* Overlay gelap transparan */
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7); /* Ubah angka opacity biar pas */
-    z-index: -1;
+/* Efek shadow di teks biar lebih jelas */
+h1, h2, p, li, a {
+    text-shadow: 2px 2px 5px rgba(0, 255, 255, 0.8); /* Bayangan cyan */
 }
 
-/* Header transparan */
-header {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 10px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-}
-
-.logo {
-    height: 60px;
-    margin-left: 20px;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
+/* Navigasi */
 nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Bagian utama */
-section {
-    padding: 100px 20px 50px;
-}
-
-/* Teks divisi */
-.divisi h2 {
-    color: cyan;
-}
-
-.divisi p {
+    color: white; /* Putih tetap terlihat */
     font-size: 18px;
+    text-shadow: 1px 1px 3px cyan; /* Tambahin efek biar lebih jelas */
 }
 
-/* List anggota dan kapten */
-ul {
-    list-style: none;
-    padding: 0;
+/* Logo */
+.logo {
+    width: 120px;
+    height: auto;
 }
 
-ul li {
-    font-size: 20px;
-    margin: 5px 0;
-}
-
-/* Bagian Open Member */
-#open-member h2 {
-    color: yellow;
-}
-
-/* Bagian Prestasi */
-#prestasi {
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.prestasi-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.prestasi-item {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-    max-width: 300px;
-}
-
-.prestasi-item img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.prestasi-item p {
-    color: white;
-    font-size: 16px;
-    margin-top: 10px;
+/* Sesuaikan posisi divisi */
+section#divisi {
+    margin-top: 20px;
 }
