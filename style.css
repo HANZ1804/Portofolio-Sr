@@ -1,7 +1,8 @@
-/* Mengatur background dengan gambar */
+/* Atur background dengan overlay */
 body {
     background: url('background.jpg') no-repeat center center fixed;
     background-size: cover;
+    position: relative;
     color: white;
     font-family: Arial, sans-serif;
     text-align: center;
@@ -9,9 +10,21 @@ body {
     padding: 0;
 }
 
-/* Header dengan logo dan navigasi */
+/* Overlay gelap transparan */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Ubah angka opacity biar pas */
+    z-index: -1;
+}
+
+/* Header transparan */
 header {
-    background: rgba(0, 0, 0, 0.6); /* Memberikan efek transparan */
+    background: rgba(0, 0, 0, 0.7);
     padding: 10px 0;
     display: flex;
     align-items: center;
@@ -24,7 +37,7 @@ header {
 }
 
 .logo {
-    height: 60px; /* Sesuaikan dengan ukuran logo */
+    height: 60px;
     margin-left: 20px;
 }
 
@@ -55,7 +68,7 @@ section {
     padding: 100px 20px 50px;
 }
 
-/* Gaya untuk divisi */
+/* Teks divisi */
 .divisi h2 {
     color: cyan;
 }
@@ -64,7 +77,7 @@ section {
     font-size: 18px;
 }
 
-/* Daftar anggota dan kapten */
+/* List anggota dan kapten */
 ul {
     list-style: none;
     padding: 0;
@@ -75,11 +88,7 @@ ul li {
     margin: 5px 0;
 }
 
-/* Tombol navigasi Open Member */
-#open-member {
-    margin-top: 50px;
-}
-
+/* Bagian Open Member */
 #open-member h2 {
     color: yellow;
 }
