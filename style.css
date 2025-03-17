@@ -1,3 +1,4 @@
+/* Reset dasar */
 body {
     background-color: black;
     color: cyan;
@@ -7,61 +8,60 @@ body {
     padding: 0;
 }
 
+/* Header */
 header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    background-color: #111;
+    justify-content: space-between;
     padding: 10px 20px;
+    background-color: #111;
 }
 
+/* Logo */
 .logo {
-    width: 50px;
+    width: 120px; /* Ukuran logo dibesarin */
     height: auto;
 }
 
+/* Navigasi */
 nav ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 15px;
 }
 
 nav ul li {
-    display: inline;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: cyan;
     text-decoration: none;
+    color: cyan;
+    font-size: 18px;
 }
 
+/* Section */
 section {
-    padding: 20px;
+    padding: 40px 20px;
 }
 
+/* Judul */
 h1, h2 {
     color: cyan;
-    margin-bottom: 5px;
 }
 
+/* List */
 ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
 }
 
 ul li {
     font-size: 18px;
-    margin: 3px 0;
 }
 
-/* Buat ngurangin jarak antara kapten */
-.kapten-list li {
-    margin: 2px 0;
-}
-
-/* Buat ngatur divisi di tengah */
-.divisi {
-    margin-top: 20px;
+/* Spasi antar elemen */
+section#divisi {
+    margin-top: 30px;
 }
