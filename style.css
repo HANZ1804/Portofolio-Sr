@@ -1,0 +1,67 @@
+body {
+    background-color: black;
+    color: cyan;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    padding: 10px 20px;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: cyan;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+h1, h2 {
+    color: cyan;
+    margin-bottom: 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 18px;
+    margin: 3px 0;
+}
+
+/* Buat ngurangin jarak antara kapten */
+.kapten-list li {
+    margin: 2px 0;
+}
+
+/* Buat ngatur divisi di tengah */
+.divisi {
+    margin-top: 20px;
+}
