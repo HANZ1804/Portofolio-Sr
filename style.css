@@ -12,10 +12,10 @@ header {
 }
 
 .logo {
-    width: 80px; /* Sesuaikan ukuran */
+    max-width: 10%; /* Logo hanya 10% dari lebar layar */
     height: auto;
     display: block;
-    margin: 10px auto; /* Biar tetap di tengah */
+    margin: 10px auto;
 }
 
 h1 {
