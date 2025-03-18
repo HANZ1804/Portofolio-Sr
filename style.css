@@ -1,4 +1,4 @@
-/* Background hitam dengan font putih */
+/* === Global Styles === */
 body {
     background-color: black;
     color: white;
@@ -7,59 +7,87 @@ body {
     padding: 0;
 }
 
-/* Header navigasi */
-nav {
-    background: black;
+/* === Header Navigation === */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: black;
     padding: 10px 0;
-    text-align: center;
 }
 
-nav a {
+.navbar a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
+    padding: 10px 15px;
+    font-size: 16px;
 }
 
-/* Logo di header */
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* === Logo Styling === */
+.logo-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
 .logo {
-    width: 80px; /* Ukuran logo diperbesar */
+    width: 90px; /* Logo diperbesar */
+}
+
+/* === Section Titles === */
+h1, h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* === Tim Divisi === */
+.tim-divisi {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.tim-divisi h2 {
+    font-size: 22px;
+    color: cyan;
+}
+
+.tim-divisi p {
+    font-style: italic;
+    color: lightgray;
+}
+
+/* === Daftar Anggota & Kapten === */
+.list {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.list li {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+/* === Gambar Prestasi === */
+.prestasi img {
+    width: 50%; /* Gambar sertifikat lebih kecil */
+    max-width: 400px;
     height: auto;
     display: block;
     margin: 10px auto;
-}
-
-/* Styling untuk judul tim */
-h1, h2 {
-    text-align: center;
-    color: cyan;
-}
-
-/* Bagian tim */
-.team {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.team h3 {
-    color: cyan;
-}
-
-/* Mengatur ukuran gambar di bagian prestasi */
-.prestasi img {
-    width: 80%; /* Lebar gambar 80% dari kontainer */
-    max-width: 600px; /* Maksimal lebar 600px */
-    height: auto;
-    display: block;
-    margin: 20px auto; /* Pusatkan gambar */
     border-radius: 10px;
 }
 
-/* Footer */
-footer {
+/* === Footer === */
+.footer {
     text-align: center;
     padding: 10px;
-    color: white;
-    background: black;
-    margin-top: 20px;
+    font-size: 14px;
+    color: gray;
 }
