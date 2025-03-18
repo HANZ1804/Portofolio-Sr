@@ -12,7 +12,7 @@ header {
 }
 
 .logo {
-    max-width: 10%; /* Logo hanya 10% dari lebar layar */
+    width: 80px; /* Ganti dari max-width: 10% ke ukuran fix */
     height: auto;
     display: block;
     margin: 10px auto;
@@ -57,11 +57,10 @@ ul li {
 }
 
 .achievements img {
-    width: 60%; /* Sesuaikan ukuran */
-    max-width: 500px; /* Biar nggak kegedean di layar besar */
-    margin: 10px auto;
+    width: 80%; /* Bisa coba 60% kalau masih kegedean */
+    max-width: 400px; /* Lebih kecil biar pas */
     display: block;
-    border-radius: 10px;
+    margin: 20px auto;
 }
 
 footer {
