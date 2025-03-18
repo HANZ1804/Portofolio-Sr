@@ -12,10 +12,10 @@ header {
 }
 
 .logo {
-    width: 100px; /* Ukuran sedang */
+    width: 80px; /* Lebih kecil dari sebelumnya */
     height: auto;
     display: block;
-    margin: 0 auto 10px; /* Tengahin logo */
+    margin: 0 auto 5px; /* Tengahin logo & kasih jarak kecil */
 }
 
 h1 {
@@ -57,11 +57,11 @@ ul li {
 }
 
 .achievements img {
-    width: 70%; /* Ukuran sedang */
-    max-width: 350px; /* Biar nggak terlalu besar */
-    margin: 10px auto;
+    width: 60%; /* Lebih kecil biar pas */
+    max-width: 300px; /* Ukuran maksimal dikurangi */
+    margin: 5px auto;
     display: block;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 footer {
