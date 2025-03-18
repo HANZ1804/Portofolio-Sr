@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: black;
-    color: white;
+    background-color: black; /* Pastikan ini tetap hitam */
+    color: white; /* Biar teks tetap kelihatan */
     text-align: center;
     margin: 0;
     padding: 0;
@@ -12,11 +12,10 @@ header {
 }
 
 .logo {
-    width: 50px; /* Ukuran lebih kecil */
+    width: 80px; /* Sesuaikan ukuran */
     height: auto;
-    display: inline-block; /* Biar sejajar sama teks */
-    vertical-align: middle; /* Posisikan sejajar teks */
-    margin-right: 10px; /* Kasih jarak kecil ke kanan */
+    display: block;
+    margin: 10px auto; /* Biar tetap di tengah */
 }
 
 h1 {
@@ -58,11 +57,11 @@ ul li {
 }
 
 .achievements img {
-    width: 60%; /* Lebih kecil biar pas */
-    max-width: 300px; /* Ukuran maksimal dikurangi */
-    margin: 5px auto;
+    width: 60%; /* Sesuaikan ukuran */
+    max-width: 500px; /* Biar nggak kegedean di layar besar */
+    margin: 10px auto;
     display: block;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 footer {
