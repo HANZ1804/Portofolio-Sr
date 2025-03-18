@@ -12,10 +12,11 @@ header {
 }
 
 .logo {
-    width: 80px; /* Lebih kecil dari sebelumnya */
+    width: 50px; /* Ukuran lebih kecil */
     height: auto;
-    display: block;
-    margin: 0 auto 5px; /* Tengahin logo & kasih jarak kecil */
+    display: inline-block; /* Biar sejajar sama teks */
+    vertical-align: middle; /* Posisikan sejajar teks */
+    margin-right: 10px; /* Kasih jarak kecil ke kanan */
 }
 
 h1 {
