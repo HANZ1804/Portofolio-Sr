@@ -1,93 +1,69 @@
-/* === Global Styles === */
 body {
+    font-family: Arial, sans-serif;
     background-color: black;
     color: white;
-    font-family: Arial, sans-serif;
+    text-align: center;
     margin: 0;
     padding: 0;
 }
 
-/* === Header Navigation === */
-.navbar {
-    display: flex;
-    justify-content: center;
-    background-color: black;
-    padding: 10px 0;
-}
-
-.navbar a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    font-size: 16px;
-}
-
-.navbar a:hover {
-    text-decoration: underline;
-}
-
-/* === Logo Styling === */
-.logo-container {
-    text-align: center;
-    margin: 20px 0;
+header {
+    padding: 20px;
 }
 
 .logo {
-    width: 20px; /* Logo diperbesar */
+    width: 120px; /* Ukuran logo lebih besar */
+    height: auto;
+    margin-bottom: 10px;
 }
 
-/* === Section Titles === */
-h1, h2 {
-    text-align: center;
-    margin-top: 20px;
+h1 {
+    font-size: 24px;
 }
 
-/* === Tim Divisi === */
-.tim-divisi {
-    text-align: center;
+p {
+    font-size: 16px;
+}
+
+.division {
     margin: 20px 0;
 }
 
-.tim-divisi h2 {
-    font-size: 22px;
+.shadow-reapers {
     color: cyan;
 }
 
-.tim-divisi p {
-    font-style: italic;
-    color: lightgray;
+.shadow-stars {
+    color: orange;
 }
 
-/* === Daftar Anggota & Kapten === */
-.list {
-    text-align: center;
+.motto {
+    font-style: italic;
+}
+
+.team, .achievements, .leaders {
     margin: 20px 0;
 }
 
-.list ul {
-    list-style: none;
+ul {
+    list-style-type: none;
     padding: 0;
 }
 
-.list li {
+ul li {
     font-size: 18px;
     margin: 5px 0;
 }
 
-/* === Gambar Prestasi === */
-.prestasi img {
-    width: 50%; /* Gambar sertifikat lebih kecil */
+.achievements img {
+    width: 80%;
     max-width: 400px;
-    height: auto;
-    display: block;
-    margin: 10px auto;
+    margin: 10px 0;
     border-radius: 10px;
 }
 
-/* === Footer === */
-.footer {
-    text-align: center;
+footer {
+    margin-top: 20px;
     padding: 10px;
     font-size: 14px;
-    color: gray;
 }
