@@ -1,53 +1,71 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: black; /* Pastikan ini tetap hitam */
-    color: white; /* Biar teks tetap kelihatan */
+    background-color: black;
+    color: white;
     text-align: center;
     margin: 0;
     padding: 0;
 }
 
 header {
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.small-logo {
+    width: 50px; /* Kecilkan ukuran logo */
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: cyan;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: lightblue;
+}
+
+main {
+    margin-top: 80px;
     padding: 20px;
 }
 
-.logo {
-    width: 7px; /* Bisa dikecilin lagi kalau masih kegedean */
-    height: auto;
-    display: block;
-    margin: 10px auto;
-}
-
-h1 {
-    font-size: 24px;
+h1, h2 {
+    color: cyan;
 }
 
 p {
     font-size: 16px;
 }
 
-.division {
-    margin: 20px 0;
-}
-
-.shadow-reapers {
-    color: cyan;
-}
-
-.shadow-stars {
-    color: orange;
-}
-
-.motto {
-    font-style: italic;
-}
-
-.team, .achievements, .leaders {
-    margin: 20px 0;
-}
-
 ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 
@@ -57,14 +75,34 @@ ul li {
 }
 
 .achievements img {
-    width: 80%; /* Bisa coba 60% kalau masih kegedean */
-    max-width: 400px; /* Lebih kecil biar pas */
-    display: block;
-    margin: 20px auto;
+    width: 300px;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#open-member {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+#open-member a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: cyan;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#open-member a:hover {
+    background-color: lightblue;
 }
 
 footer {
     margin-top: 20px;
     padding: 10px;
-    font-size: 14px;
-}
+    background-color: rgba(0, 0, 0, 0.9);
+                           }
